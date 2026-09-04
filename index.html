@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></></title>
+  <link rel="stylesheet" href="imposter.css">
+</head>
+<body>
+
+  <div class="hearts-bg"></div>
+
+  <svg style="position: absolute; width: 0; height: 0;">
+    <filter id="paper-texture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <div class="paper-card" id="paperCard">
+    <div class="stamped-flower">
+      <svg width="65" height="65" viewBox="0 0 100 100">
+        <path d="M 35 60 Q 20 65 25 80 Q 40 75 35 60 Z" fill="#9dbf9e" />
+        <path d="M 65 60 Q 80 65 75 80 Q 60 75 65 60 Z" fill="#9dbf9e" />
+        <circle cx="50" cy="30" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="33" cy="42" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="67" cy="42" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="40" cy="60" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="60" cy="60" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="50" cy="47" r="10" fill="#fce38a" />
+      </svg>
+    </div>
+
+    <h1 class="card-text">
+      I made<br>
+      something for<br>
+      you
+    </h1>
+
+    <div class="card-bottom">
+      <div class="gif-container">
+        <img src="https://media.tenor.com/Qj40AdvEqKsAAAAi/bubu-happy.gif" alt="Cute GIF" class="cute-gif">
+      </div>
+      <button class="action-btn" id="nextBtn">what?</button>
+    </div>
+  </div>
+
+  <div class="paper-card hidden" id="paperCard2">
+    <div class="stamped-flower">
+      <svg width="65" height="65" viewBox="0 0 100 100">
+        <path d="M 35 60 Q 20 65 25 80 Q 40 75 35 60 Z" fill="#9dbf9e" />
+        <path d="M 65 60 Q 80 65 75 80 Q 60 75 65 60 Z" fill="#9dbf9e" />
+        <circle cx="50" cy="30" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="33" cy="42" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="67" cy="42" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="40" cy="60" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="60" cy="60" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="50" cy="47" r="10" fill="#fce38a" />
+      </svg>
+    </div>
+
+    <h1 class="card-text">
+      will you<br>
+      see it ?
+    </h1>
+
+    <div class="card-bottom step2-bottom">
+      <button class="action-btn choice-btn" id="yesBtn">Yes</button>
+      <div class="gif-container">
+        <img src="https://media.tenor.com/0cNM_9li440AAAAj/dudu-giving-flowers-bubu-flowers.gif" alt="Cute GIF" class="cute-gif">
+      </div>
+      <button class="action-btn choice-btn" id="noBtn">No</button>
+    </div>
+  </div>
+
+  <div class="paper-card hidden" id="paperCard3No">
+    <div class="stamped-flower">
+      <svg width="65" height="65" viewBox="0 0 100 100">
+        <path d="M 35 60 Q 20 65 25 80 Q 40 75 35 60 Z" fill="#9dbf9e" />
+        <path d="M 65 60 Q 80 65 75 80 Q 60 75 65 60 Z" fill="#9dbf9e" />
+        <circle cx="50" cy="30" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="33" cy="42" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="67" cy="42" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="40" cy="60" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="60" cy="60" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="50" cy="47" r="10" fill="#fce38a" />
+      </svg>
+    </div>
+
+    <h1 class="card-text">
+      Please say<br>
+      yes
+    </h1>
+
+    <div class="card-bottom">
+      <div class="gif-container">
+        <img src="https://media.tenor.com/yZoKXA08ZyYAAAAj/bubu-bubu-dudu.gif" alt="Cute GIF" class="cute-gif">
+      </div>
+      <button class="action-btn" id="fineBtn">fine</button>
+    </div>
+  </div>
+
+  <div class="paper-card hidden" id="paperCard4">
+    <div class="stamped-flower">
+      <svg width="65" height="65" viewBox="0 0 100 100">
+        <path d="M 35 60 Q 20 65 25 80 Q 40 75 35 60 Z" fill="#9dbf9e" />
+        <path d="M 65 60 Q 80 65 75 80 Q 60 75 65 60 Z" fill="#9dbf9e" />
+        <circle cx="50" cy="30" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="33" cy="42" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="67" cy="42" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="40" cy="60" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="60" cy="60" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="50" cy="47" r="10" fill="#fce38a" />
+      </svg>
+    </div>
+
+    <h1 class="card-text">
+      Yay<br>
+      Are you ready<br>
+      for the surprise ?
+    </h1>
+
+    <div class="card-bottom">
+      <div class="gif-container">
+        <img src="https://media.tenor.com/ivlixHuP8r0AAAAj/dudu-dudu-bubu.gif" alt="Cute GIF" class="cute-gif">
+      </div>
+      <button class="action-btn" id="finalYesBtn">yes !!</button>
+    </div>
+  </div>
+
+  <div class="paper-card hidden" id="paperCard5">
+    <div class="stamped-flower">
+      <svg width="65" height="65" viewBox="0 0 100 100">
+        <path d="M 35 60 Q 20 65 25 80 Q 40 75 35 60 Z" fill="#9dbf9e" />
+        <path d="M 65 60 Q 80 65 75 80 Q 60 75 65 60 Z" fill="#9dbf9e" />
+        <circle cx="50" cy="30" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="33" cy="42" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="67" cy="42" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="40" cy="60" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="60" cy="60" r="16" fill="#e88a93" opacity="0.85" />
+        <circle cx="50" cy="47" r="10" fill="#fce38a" />
+      </svg>
+    </div>
+
+    <div class="envelopes-grid">
+
+      <div class="mini-envelope env-tilt-1" data-note="you miss me">
+        <div class="env-pocket">
+          <div class="env-top-flap"><span class="flap-tag">open me</span></div>
+          <div class="env-white-label">
+            <span>you miss me</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-envelope env-tilt-2" data-note="you are sad">
+        <div class="env-pocket">
+          <div class="env-top-flap"><span class="flap-tag">open me</span></div>
+          <div class="env-white-label">
+            <span>you are sad</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-envelope env-tilt-3" data-note="you are happy">
+        <div class="env-pocket">
+          <div class="env-top-flap"><span class="flap-tag">open me</span></div>
+          <div class="env-white-label">
+            <span>you are happy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-envelope env-tilt-4" data-note="you need a hug">
+        <div class="env-pocket">
+          <div class="env-top-flap"><span class="flap-tag">open me</span></div>
+          <div class="env-white-label">
+            <span>you need a hug</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-envelope env-tilt-5" data-note="we fight">
+        <div class="env-pocket">
+          <div class="env-top-flap"><span class="flap-tag">open me</span></div>
+          <div class="env-white-label">
+            <span>we fight</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="letterModal" class="letter-overlay hidden">
+    <div class="letter-card">
+
+      <div class="letter-text" id="letterText"></div>
+
+      <img id="letterGif" class="bottom-right-gif gif-default" src="" alt="cute gif" />
+
+      <button class="letter-back-btn" id="letterBackBtn" aria-label="Go Back">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+  <script src="imposter.js"></script>
+</body>
+</html>
